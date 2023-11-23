@@ -1,10 +1,9 @@
 // import { StatusBar } from 'expo-status-bar';
-// import { StyleSheet, Text, View, Image, TouchableWithoutFeedback, Button , Alert, Platform} from 'react-native';
+// import { StyleSheet, Text, View, Image, TouchableWithoutFeedback, Button , Alert, Platform, SafeAreaView} from 'react-native';
 
 // export default function App() {
-//   const handleClick = () => console.log('hello')
 //   return (
-//     <SafeArea style={styles.container}>
+//     <SafeAreaView style={styles.container}>
 //       <TouchableWithoutFeedback 
 //         onPress ={
 //           ()=>Alert.prompt(
@@ -35,7 +34,7 @@
 //           ]
 //         )}
 //       />
-//     </SafeArea>
+//     </SafeAreaView>
     
 //   );
 // }
@@ -50,12 +49,32 @@
 //   },
 // });
 
-import {SafeAreaView} from 'react-native';
+
+
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, View, Text, SafeAreaView} from 'react-native';
 
 export default function App() {
   return (
-    <SafeAreaView>
-      hi
+    <SafeAreaView style={styles.container}>
+      <View style={styles.views}>
+        <Text>Hello</Text>
+      </View>
     </SafeAreaView>
-  )
+    
+  );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  views:{
+    width:'50%',
+    height:70,
+    color:'blue'
+  }
+});

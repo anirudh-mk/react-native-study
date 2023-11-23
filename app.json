@@ -29,7 +29,11 @@
     },
     "developmentClient": {
       "silentLaunch": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1faa7076-7c02-496e-9f7f-457d06beaf84"
+      }
     }
-    
   }
 }
