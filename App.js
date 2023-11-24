@@ -52,12 +52,22 @@
 
 
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, Text, SafeAreaView} from 'react-native';
+import { StyleSheet, View, Text, SafeAreaView, Dimensions} from 'react-native';
+import { useDeviceOrientation } from "@react-native-community/hooks"
 
 export default function App() {
+
+  const landscape = useDeviceOrientation();
+  console.log(landscape)
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.views}>
+      <StatusBar style="auto" />
+
+      <View style={{
+        width:'100%',
+        height: "10%",
+        backgroundColor: landscape==='portrait'? "green":yellow,
+        }}>
         <Text>Hello</Text>
       </View>
     </SafeAreaView>
@@ -71,10 +81,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+
   },
-  views:{
-    width:'50%',
-    height:70,
-    color:'blue'
-  }
 });
