@@ -97,7 +97,9 @@ export default function App() {
       flex:1,
       justifyContent:'center',
       flexDirection:'row',
-      alignItems:'center',
+      // alignItems:'center',
+      flexWrap:'wrap',
+      alignContent:'center'
     }}>
       
       <View style={{
@@ -110,6 +112,18 @@ export default function App() {
         backgroundColor:'gold',
         width:100,
         height:200,
+      }}/>
+
+      <View style={{
+        backgroundColor:'tomato',
+        width:100,
+        height:100,
+      }}/>
+
+      <View style={{
+        backgroundColor:'gold',
+        width:100,
+        height:100,
       }}/>
 
       <View style={{
