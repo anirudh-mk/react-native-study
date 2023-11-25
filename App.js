@@ -51,36 +51,65 @@
 
 
 
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, Text, SafeAreaView, Dimensions} from 'react-native';
-import { useDeviceOrientation } from "@react-native-community/hooks"
+// import { StatusBar } from 'expo-status-bar';
+// import { StyleSheet, View, Text, SafeAreaView, Dimensions} from 'react-native';
+// import { useDeviceOrientation } from "@react-native-community/hooks"
+
+// export default function App() {
+
+//   const landscape = useDeviceOrientation();
+//   console.log(landscape)
+//   return (
+//     <SafeAreaView style={styles.container}>
+//       <StatusBar style="auto" />
+
+//       <View style={{
+//         width:'100%',
+//         height: "10%",
+//         backgroundColor: landscape==='portrait'? "green":yellow,
+//         }}>
+//         <Text>Hello</Text>
+//       </View>
+//     </SafeAreaView>
+    
+//   );
+// }
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+
+//   },
+// });
+
+
+import {View} from 'react-native'
+
+import React from 'react'
 
 export default function App() {
-
-  const landscape = useDeviceOrientation();
-  console.log(landscape)
   return (
-    <SafeAreaView style={styles.container}>
-      <StatusBar style="auto" />
-
+    <View style={{flex:1}}>
       <View style={{
-        width:'100%',
-        height: "10%",
-        backgroundColor: landscape==='portrait'? "green":yellow,
-        }}>
-        <Text>Hello</Text>
-      </View>
-    </SafeAreaView>
+      backgroundColor:'dodgerblue',
+      flex:3
+    }}/>
     
-  );
+    <View style={{
+      backgroundColor:'gold',
+      flex:2
+    }}/>
+
+    <View style={{
+      backgroundColor:'tomato',
+      flex:2
+    }}/>
+    </View>
+    
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-
-  },
-});
+ 
