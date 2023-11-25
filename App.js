@@ -92,20 +92,23 @@ import React from 'react'
 
 export default function App() {
   return (
-    <View style={{flex:1}}>
+    <View style={{flexDirection:"row-reverse"}}>
       <View style={{
       backgroundColor:'dodgerblue',
-      flex:3
+      width:100,
+      height:100,
     }}/>
     
     <View style={{
       backgroundColor:'gold',
-      flex:2
+      width:100,
+      height:100,
     }}/>
 
     <View style={{
       backgroundColor:'tomato',
-      flex:2
+      width:100,
+      height:100,
     }}/>
     </View>
     
