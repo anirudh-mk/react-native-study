@@ -92,26 +92,32 @@ import React from 'react'
 
 export default function App() {
   return (
-    <View style={{flexDirection:"row-reverse"}}>
+    <View style={{
+      backgroundColor:'white',
+      flex:1,
+      justifyContent:'center',
+      flexDirection:'row',
+      alignItems:'center',
+    }}>
+      
       <View style={{
-      backgroundColor:'dodgerblue',
-      width:100,
-      height:100,
-    }}/>
-    
-    <View style={{
-      backgroundColor:'gold',
-      width:100,
-      height:100,
-    }}/>
+        backgroundColor:'dodgerblue',
+        width:100,
+        height:300,
+      }}/>
 
-    <View style={{
-      backgroundColor:'tomato',
-      width:100,
-      height:100,
-    }}/>
+      <View style={{
+        backgroundColor:'gold',
+        width:100,
+        height:200,
+      }}/>
+
+      <View style={{
+        backgroundColor:'tomato',
+        width:100,
+        height:100,
+      }}/>
     </View>
-    
   )
 }
 
